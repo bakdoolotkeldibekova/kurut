@@ -1,0 +1,86 @@
+/* Navbar style */
+
+.navbar {
+    background-color: #F6F6F6;
+    box-shadow: 2px 4px 3px #888888;
+    margin-left: -14px;
+    margin-right: -14px;
+}
+
+.navbar a {
+    color: #4682B4;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: black !important;
+}
+
+.navbar ul li a.nav-link {
+    color: #4682B4 !important;
+    margin-left: 15px
+}
+
+.vastelogo {
+    font-size: 30px;
+    color: #4682B4;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-left: 160%;
+    text-align: center;
+}
+
+
+/*Footer */
+
+footer ul li a {
+    color: white;
+}
+
+
+/* About Us page */
+
+.flip-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #4682B4;
+    color: white;
+    transform: rotateY(180deg);
+}
+
